@@ -2,6 +2,12 @@
     background-color: darkblue;
     color: white;
     position: absolute 0;
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
+    padding: 18px;
+}
+
+#logo{
+    height: 28px;
+    width: 36px;
 }

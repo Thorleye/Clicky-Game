@@ -4,6 +4,8 @@
     position: fixed;
     width: 100%;
     font-size: 20px;
+    box-shadow: 0 3px 6px black, 0 3px 6px #999;
+
 }
 
 ul {
