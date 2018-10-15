@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo from "../../logo.svg"
 
 const Footer = () => (
-    <footer class = "footer">
+    <footer className = "footer">
         <div>Clicky Game <img id="logo" alt="react-logo" src={logo}></img></div>
     </footer>
 )
