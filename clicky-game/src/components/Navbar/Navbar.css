@@ -1,6 +1,7 @@
 .navbar{
     background-color: darkblue;
     color: white;
+    min-height: 70px;
     position: fixed;
     top:0;
     width: 100%;

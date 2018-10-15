@@ -15,6 +15,7 @@ class App extends Component {
     score:0,
     highScore:0,
     picked: [],
+    message: "Click an image to begin!"
   } 
 
   componentDidMount(){
@@ -51,19 +52,28 @@ class App extends Component {
     if (newScore >= this.state.highScore){
       this.setState({highScore : newScore})
     }
+    if (newScore === friends.length){
+      this.setState({
+        message: "Wow! You beat the game",
+        highScore: "Perfect!"
+      })
+    }
   }
 
   gameReset = () => {
-    alert('lose')
     this.setState({
       score: 0,
-      picked: []
+      picked: [],
+      message: "You picked wrong! Try Again"
     });  
   }
-  
+
   checkPicked = id => {
     if (this.state.picked.indexOf(id) === -1){
-      this.setState({ picked: this.state.picked.concat(id) });
+      this.setState({ 
+        picked: this.state.picked.concat(id),
+        message: "You picked correctly!"
+      });
       this.setScore();
     } else { 
       this.gameReset();
@@ -77,6 +87,7 @@ class App extends Component {
         <Navbar 
         score={this.state.score}
         highScore={this.state.highScore}
+        message={this.state.message}
         />
         <Header />
         <div className="container">
