@@ -16,16 +16,41 @@ class App extends Component {
     highScore:0,
     picked: [],
   } 
+
+  componentDidMount(){
+    this.handleShuffle();
+  }
+
+  //credit to Fisher-Yates shuffle
+  shuffle = (array) => {
+    var m = array.length, t, i;
+    // While there remain elements to shuffle…
+    while (m) {
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+      // And swap it with the current element.
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+    return array;
+  }
+
+  handleShuffle = () => {
+    let shuffledFriends = this.shuffle(friends)
+    this.setState({friends : shuffledFriends})
+  }
   
   handleClick = id =>{
     this.checkPicked(id)
   };
 
   setScore = () => {
-    let newScore = this.state.score + 1
+    let newScore = (this.state.score + 1);
     this.setState({ score: newScore });
     if (newScore >= this.state.highScore){
-      this.setState({highScore : newScore})}
+      this.setState({highScore : newScore})
+    }
   }
 
   gameReset = () => {
@@ -33,10 +58,9 @@ class App extends Component {
     this.setState({
       score: 0,
       picked: []
-    });
-    
+    });  
   }
-
+  
   checkPicked = id => {
     if (this.state.picked.indexOf(id) === -1){
       this.setState({ picked: this.state.picked.concat(id) });
@@ -44,6 +68,7 @@ class App extends Component {
     } else { 
       this.gameReset();
     }
+    this.handleShuffle();
   }
 
   render() {
