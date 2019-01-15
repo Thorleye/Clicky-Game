@@ -11,4 +11,4 @@ Game resets on an incorrect click (Choose the same image twice).
 
 
 Game Board looks like this:
-![Game Board](clicky-game\src\assets\background\Board.JPG)
+![Game Board](./src/assets/background/Board.JPG)
