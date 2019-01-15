@@ -1,6 +1,6 @@
 # Clicky-Game
 A React based Javascript Game. Hosted on github pages.
-[Play yourself here!](https://thorleye.github.io/Clicky-Game/)
+[Play it and see!](https://thorleye.github.io/Clicky-Game/)
 
 
 ## Instructions
