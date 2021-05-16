@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "SpongeBob",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+    "image": "https://en.wikipedia.org/wiki/File:SpongeBob_SquarePants_character.svg",
     "picked": false
   },
   {
@@ -50,8 +50,8 @@
   },
   {
     "id": 9,
-    "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
+    "name": "Pickachu",
+    "image": "https://en.wikipedia.org/wiki/File:Pok%C3%A9mon_Pikachu_art.png",
     "picked": false
   },
   {
