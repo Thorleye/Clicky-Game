@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "SpongeBob",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngimg.com%2Fimage%2F49717&psig=AOvVaw0B05kYvOAXpdIPQCTdej44&ust=1621291254371000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiyid6iz_ACFQAAAAAdAAAAABAD",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/800px-SpongeBob_SquarePants_character.svg.png",
     "picked": false
   },
   {
@@ -51,7 +51,7 @@
   {
     "id": 9,
     "name": "Pickachu",
-    "image": "https://en.wikipedia.org/wiki/File:Pok%C3%A9mon_Pikachu_art.png",
+    "image": "https://archives.bulbagarden.net/media/upload/0/0d/025Pikachu.png",
     "picked": false
   },
   {
